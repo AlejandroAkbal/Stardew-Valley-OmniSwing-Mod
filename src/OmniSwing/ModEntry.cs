@@ -9,6 +9,7 @@ namespace OmniSwing
     {
         public override void Entry(IModHelper helper)
         {
+            ModLogger.Initialize(Monitor);
         }
     }
 }
