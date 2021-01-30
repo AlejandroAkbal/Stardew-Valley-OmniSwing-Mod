@@ -7,6 +7,13 @@ namespace OmniSwing
 {
     internal class OmniSwing
     {
+        private static ModConfig _Config;
+
+        public static void Initialize(ModConfig config)
+        {
+            _Config = config;
+        }
+
         public static void AutoSwing()
         {
             Farmer player = Game1.player;
@@ -16,6 +23,12 @@ namespace OmniSwing
             if (currentTool == null)
             {
                 ModLogger.Debug("Current tool is not a melee weapon.");
+                return;
+            }
+
+            if (_Config.CheckIfToolIsScythe && currentTool.isScythe())
+            {
+                ModLogger.Debug("Current tool is a Scythe.");
                 return;
             }
 
