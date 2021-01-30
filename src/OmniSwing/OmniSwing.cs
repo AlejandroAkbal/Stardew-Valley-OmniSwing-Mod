@@ -36,7 +36,7 @@ namespace OmniSwing
             //int toolLocationX = (int)Math.Round(toolLocation.X);
             //int toolLocationY = (int)Math.Round(toolLocation.Y);
 
-            ModLogger.Debug($"Swinging '{currentTool.BaseName}'");
+            ModLogger.Debug($"Swinging '{currentTool.BaseName}'.");
 
             // --- Modifiers
 
