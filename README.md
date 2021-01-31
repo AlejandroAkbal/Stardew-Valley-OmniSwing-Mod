@@ -1,6 +1,6 @@
 # Stardew Valley OmniSwing Mod
 
-Automatically swing your weapon.
+Automatically swing your weapon, in a vanilla fashion.
 
 ![Header](resources/img/Player_Swing_Trimmed.png)
 
@@ -12,11 +12,10 @@ Automatically swing your weapon.
 
 ## How to use
 
-Just hold click to automatically swing your weapon in the facing direction.
+Just hold click to automatically swing your weapon in the facing direction. Very vanilla friendly.
 
-This mod's name is a reference to the [same-titled-mod for Terraria](https://github.com/gardenappl/OmniSwing).
-
-This mod is configurable, check `Stardew Valley/Mods/Quick Sell/config.json` for its settings.
+You can configure this mod!
+Check `Stardew Valley/Mods/OmniSwing/config.json` for its settings.
 
 ## Compatibility
 
@@ -32,9 +31,14 @@ This mod is configurable, check `Stardew Valley/Mods/Quick Sell/config.json` for
 
 This mod is open source and licensed under MIT, check it out.
 
-- Release notes
-- [Official discussion thread](https://www.nexusmods.com/stardewvalley/mods/7877?tab=posts)
-- [Source code](https://github.com/AlejandroAkbal/Stardew-Valley-OmniSwing-Mod)
+- Release notes.
+- [Official discussion thread](https://www.nexusmods.com/stardewvalley/mods/7877?tab=posts).
+- [Source code](https://github.com/AlejandroAkbal/Stardew-Valley-OmniSwing-Mod).
+
+## Credit
+
+- This mod's name is a reference to the [same-titled-mod](https://github.com/gardenappl/OmniSwing) for Terraria.
+- This mod is inspired by the popular [AutoAttack mod](https://www.nexusmods.com/stardewvalley/mods/7258).
 
 ## Support
 
@@ -42,6 +46,6 @@ If you have found this mod useful, please endorse it!
 
 Or support me financially.
 
-- [GitHub Sponsors](https://redirect.akbal.dev/github/sponsor)
-- [LiberaPay](https://redirect.akbal.dev/liberapay)
-- [PayPal](https://redirect.akbal.dev/paypal)
+- [GitHub Sponsors](https://redirect.akbal.dev/github/sponsor).
+- [LiberaPay](https://redirect.akbal.dev/liberapay).
+- [PayPal](https://redirect.akbal.dev/paypal).
