@@ -18,13 +18,13 @@ namespace OmniSwing
 
             if (currentTool == null)
             {
-                ModLogger.Debug("Current tool is not a melee weapon.");
+                ModLogger.Trace("Current tool is not a melee weapon.");
                 return;
             }
 
             if (Config.CheckIfToolIsScythe && currentTool.isScythe())
             {
-                ModLogger.Debug("Current tool is a Scythe.");
+                ModLogger.Trace("Current tool is a Scythe.");
                 return;
             }
 

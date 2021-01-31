@@ -26,7 +26,10 @@ namespace OmniSwing
         private void OnButtonsChanged(object sender, ButtonsChangedEventArgs e)
         {
             if (!Context.IsPlayerFree)
+            {
+                ModLogger.Trace("Player is not free to act!");
                 return;
+            }
 
             foreach (SButton button in e.Held)
             {
