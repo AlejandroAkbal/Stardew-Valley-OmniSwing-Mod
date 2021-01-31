@@ -5,14 +5,20 @@ namespace OmniSwing
 {
     public class ModEntry : Mod
     {
-        private ModConfig Config;
+        public static Mod Instance;
+
+        public static new IModHelper Helper;
+
+        public static ModConfig Config;
 
         public override void Entry(IModHelper helper)
         {
-            this.Config = this.Helper.ReadConfig<ModConfig>();
+            // Provide a global reference to this mod's SMAPI utilities
+            Instance = this;
 
-            ModLogger.Initialize(Monitor);
-            OmniSwing.Initialize(Config);
+            Helper = helper;
+
+            Config = Helper.ReadConfig<ModConfig>();
 
             helper.Events.Input.ButtonsChanged += this.OnButtonsChanged;
         }

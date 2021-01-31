@@ -5,14 +5,10 @@ using StardewValley.Tools;
 
 namespace OmniSwing
 {
-    internal class OmniSwing
+    public static class OmniSwing
     {
-        private static ModConfig _Config;
+        private static readonly ModConfig Config = ModEntry.Config;
 
-        public static void Initialize(ModConfig config)
-        {
-            _Config = config;
-        }
 
         public static void AutoSwing()
         {
@@ -26,7 +22,7 @@ namespace OmniSwing
                 return;
             }
 
-            if (_Config.CheckIfToolIsScythe && currentTool.isScythe())
+            if (Config.CheckIfToolIsScythe && currentTool.isScythe())
             {
                 ModLogger.Debug("Current tool is a Scythe.");
                 return;

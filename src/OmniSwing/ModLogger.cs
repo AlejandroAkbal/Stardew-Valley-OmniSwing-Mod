@@ -2,18 +2,13 @@
 
 namespace OmniSwing
 {
-    internal class ModLogger
+    public static class ModLogger
     {
-        private static IMonitor _Monitor;
-
-        public static void Initialize(IMonitor monitor)
-        {
-            _Monitor = monitor;
-        }
+        private static readonly IMonitor Monitor = ModEntry.Instance.Monitor;
 
         public static void Debug(string message)
         {
-            _Monitor.Log(message, LogLevel.Debug);
+            Monitor.Log(message, LogLevel.Debug);
         }
     }
 }
