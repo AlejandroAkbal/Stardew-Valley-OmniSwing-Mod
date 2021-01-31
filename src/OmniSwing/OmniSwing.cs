@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.Xna.Framework;
+using StardewModdingAPI;
 using StardewValley;
 using StardewValley.Tools;
 
@@ -9,6 +10,7 @@ namespace OmniSwing
     {
         private static readonly ModConfig Config = ModEntry.Config;
 
+        private static readonly IReflectionHelper Reflection = ModEntry.Helper.Reflection;
 
         public static void AutoSwing()
         {
@@ -42,8 +44,8 @@ namespace OmniSwing
 
             // --- Swing mechanic
 
-            // Works
-            currentTool.doSwipe(currentTool.type, toolLocation, player.facingDirection, currentTool.speed, player);
+            // Works and respects the game
+            Reflection.GetMethod(player, "performFireTool").Invoke();
 
             // Works but turns tool invisible
             //currentTool.beginUsing(player.currentLocation, toolLocationX, toolLocationY, player);
