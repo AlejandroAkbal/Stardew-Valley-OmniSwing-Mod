@@ -36,26 +36,29 @@ namespace OmniSwing
 
             ModLogger.Debug($"Swinging '{currentTool.BaseName}'.");
 
-            // --- Modifiers
-
-            //currentTool.setFarmerAnimating(player);
-
-            //currentTool.AnimationSpeedModifier = 0;
-
             // --- Swing mechanic
 
             // Works and respects the game
             Reflection.GetMethod(player, "performFireTool").Invoke();
 
-            // Works but turns tool invisible
+            // Works, but turns weapon invisible
+            //currentTool.doSwipe(currentTool.type, toolLocation, player.facingDirection, currentTool.speed, player);
+
+            // Works, but turns tool invisible and stops animation
             //currentTool.beginUsing(player.currentLocation, toolLocationX, toolLocationY, player);
             //currentTool.endUsing(player.currentLocation, player);
+
+            // Doesn't do anything
+            //Farmer.useTool(player);
+
+            // Doesn't do anything
+            //currentTool.DoFunction(player.currentLocation, toolLocationX, toolLocationY, 1, player);
 
             // Doesn't do anything
             //currentTool.leftClick(player);
 
             // Doesn't do anything
-            //currentTool.DoFunction(player.currentLocation, toolLocationX, toolLocationY, 1, player);
+            //currentTool.tickUpdate(new GameTime(), player);
         }
     }
 }
