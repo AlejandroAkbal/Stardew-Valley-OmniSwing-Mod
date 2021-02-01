@@ -10,15 +10,5 @@ namespace OmniSwing
         {
             Monitor.Log(message, LogLevel.Trace);
         }
-
-        public static void Debug(string message)
-        {
-            Monitor.Log(message, LogLevel.Debug);
-        }
-
-        public static void Warn(string message)
-        {
-            Monitor.Log(message, LogLevel.Warn);
-        }
     }
 }
