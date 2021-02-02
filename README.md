@@ -38,6 +38,7 @@ This mod is open source and licensed under MIT, check it out.
 ## Credit
 
 - This mod's name is a reference to the [same-titled-mod](https://github.com/gardenappl/OmniSwing) for Terraria.
+- This mod's icon was created by [slashedstrings](https://www.deviantart.com/slashedstrings).
 - This mod is inspired by the popular [AutoAttack mod](https://www.nexusmods.com/stardewvalley/mods/7258).
 
 ## Support
