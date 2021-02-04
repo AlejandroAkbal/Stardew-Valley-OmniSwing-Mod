@@ -2,7 +2,7 @@
 
 Automatically swing your weapon, in a vanilla fashion.
 
-![Header](resources/img/Player_Swing_Trimmed.png)
+![Header](resources/img/icon.png)
 
 ## Install
 
